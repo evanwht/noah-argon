@@ -16,21 +16,26 @@
 
 */
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "assets/vendor/nucleo/css/nucleo.css";
-import "assets/vendor/font-awesome/css/font-awesome.min.css";
-import "assets/scss/argon-design-system-react.scss?v1.1.0";
+class TopSkewSpacer extends React.Component {
+    render() {
+        return (
+            <div className="pt-0 mt-0 separator zindex-100">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    version="1.1"
+                    viewBox="0 0 2560 100"
+                    x="0"
+                    y="0"
+                >
+                    <polygon
+                        className="fill-white"
+                        points="0,0 2560,0 0,100"
+                    />
+                </svg>
+            </div>
+        );
+    }
+}
 
-import Landing from "views/examples/Landing.js";
-
-ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact render={props => <Landing {...props} />} />
-      <Redirect to="/" />
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+export default TopSkewSpacer;

@@ -106,26 +106,8 @@ class SimpleFooter extends React.Component {
             <hr />
             <Row className=" align-items-center justify-content-md-between">
               <Col md="6">
-                <div className=" copyright">
-                  © {new Date().getFullYear()}{" "}
-                  <a
-                    href="https://www.creative-tim.com?ref=adsr-footer"
-                    target="_blank"
-                  >
-                    Creative Tim
-                  </a>
-                  .
-                </div>
-              </Col>
-              <Col md="6">
                 <Nav className=" nav-footer justify-content-end">
                   <NavItem>
-                    <NavLink
-                      href="https://www.creative-tim.com?ref=adsr-footer"
-                      target="_blank"
-                    >
-                      Creative Tim
-                    </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
